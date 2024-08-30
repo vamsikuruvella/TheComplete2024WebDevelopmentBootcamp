@@ -3,6 +3,7 @@ window.onload=function(){
 
     var tagname=document.getElementsByTagName("li");
     var tagnamelen=tagname.length;
-    var classname=document.getElementsByClassName('btn')
-    console.log("Tag Name: "+tagname+"\nTag Name Len: "+tagnamelen+"\nClass Name: "+classname);
+    var classname=document.getElementsByClassName('btn');
+    var classnamelen=classname.length;
+    console.log("Tag Name: "+tagname+"\nTag Name Len: "+tagnamelen+"\nClass Name: "+classname+"\nClass Name Len: "+classnamelen);
 }
