@@ -5,5 +5,6 @@ window.onload=function(){
     var tagnamelen=tagname.length;
     var classname=document.getElementsByClassName('btn');
     var classnamelen=classname.length;
+    var idname=document.getElementById()
     console.log("Tag Name: "+tagname+"\nTag Name Len: "+tagnamelen+"\nClass Name: "+classname+"\nClass Name Len: "+classnamelen);
 }
