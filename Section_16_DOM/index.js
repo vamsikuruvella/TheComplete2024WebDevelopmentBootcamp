@@ -12,4 +12,6 @@ window.onload=function(){
     var claslistname=idname.classList
     console.log("Class List: "+claslistname);
     classname.classList.toggle('vvvv');
+    console.log(queryname.innerHTML);
+    console.log(queryname.textContent);
 }
