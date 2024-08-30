@@ -6,6 +6,6 @@ window.onload=function(){
     var classname=document.getElementsByClassName('btn');
     var classnamelen=classname.length;
     var idname=document.getElementById("list");
-    var queryname=document.querySelector("#title");
+    var queryname=document.querySelector("#title");//"#list a","li a","a",
     console.log("Tag Name: "+tagname+"\nTag Name Len: "+tagnamelen+"\nClass Name: "+classname+"\nClass Name Len: "+classnamelen+"\nID Name: "+idname+"\nQuery Name: "+queryname);
 }
