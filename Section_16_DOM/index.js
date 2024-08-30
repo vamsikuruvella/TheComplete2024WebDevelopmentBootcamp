@@ -14,4 +14,5 @@ window.onload=function(){
     classname.classList.toggle('vvvv');
     console.log(queryname.innerHTML);
     console.log(queryname.textContent);
+    queryallname[0].setAttribute('href',"www.github.com");
 }
