@@ -1,8 +1,8 @@
 // window.onload(){}
 
 
-function handleClick(){
-    alert("I got clicked.")
-}
 
-document.querySelector("button").addEventListener("click",handleClick)
+
+document.querySelector("button").addEventListener("click",function(){
+
+})
