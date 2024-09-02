@@ -16,3 +16,9 @@ function multiply(n1,n2){
 function Calc(n1,n2,oper){
     oper(n1,n2);
 }
+
+/*
+debugger
+Calc(1,2,add);
+//put this in console for debugging.
+*/
