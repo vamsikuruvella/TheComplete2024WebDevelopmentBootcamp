@@ -3,7 +3,8 @@
 var buttons=document.querySelectorAll("button")
 for(i in buttons){
     var buttonClass=buttons[i].className.split(" ")[0];
-    print("Line 6 "+ buttonClass);
+    console.log(buttons[i].className);
+    console.log("Line 6 "+ buttonClass);
     buttons[i].addEventListener("click",function(){
         var audio=new Audio("sounds/tom-1.mp3");
         audio.play();
