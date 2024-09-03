@@ -3,7 +3,7 @@
 var buttons=document.querySelectorAll("button")
 for(i in buttons){
     var rawclass=buttons[i].className;
-    console.log("Length  "+buttons[i].length);
+    console.log("Length  "+buttons.length);
     console.log(rawclass);
     if(rawclass){
     var buttonClass=rawclass.split(" ")[0];
