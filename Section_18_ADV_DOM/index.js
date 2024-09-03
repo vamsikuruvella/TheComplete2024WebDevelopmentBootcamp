@@ -2,8 +2,9 @@
 
 var buttons=document.querySelectorAll("button")
 for(i in buttons){
-    if(buttons[i]){
-    var buttonClass=buttons[i].className.split(" ")[0];
+    var rawclass=buttons[i].className;
+    if(rawclass){
+    var buttonClass=rawclass.split(" ")[0];
     console.log(buttons[i].className);
     console.log("Line 6 "+ buttonClass);
     }
