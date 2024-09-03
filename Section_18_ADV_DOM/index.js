@@ -3,7 +3,8 @@
 var buttons=document.querySelectorAll("button")
 for(i in buttons){
     buttons[i].addEventListener("click",function(){
-        alert("I got clicked.");
+        var audio=new Audio("sounds/tom-1.mp3");
+        audio.play();
     })
 }
 //Higher order functions
