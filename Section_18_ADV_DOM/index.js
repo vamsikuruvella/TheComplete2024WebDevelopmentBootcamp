@@ -44,6 +44,7 @@ for(i in buttons){
             tom7.play();
         break;
         default:
+            console.log(buttonInnerHTMl);
         }
     })
 }
