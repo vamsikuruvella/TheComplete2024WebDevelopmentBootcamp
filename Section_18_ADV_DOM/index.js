@@ -73,5 +73,8 @@ window.onload=function(){
     }
     var bellboy1=new BellBoy(12,"Tommy",['Bedroom','coridor']);
     var bellboy2=new BellBoy(2,"Jimmy",['Bath','Bedroom','coridor']);
+    console.log(bellboy1.name);
     console.log(bellboy1.experience);
+    console.log(bellboy2.name);
+    console.log(bellboy2.experience);
 }
