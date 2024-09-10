@@ -11,8 +11,15 @@ for(i in buttons){
     console.log("Line 6 "+ buttonClass);
     }
     buttons[i].addEventListener("click",function(){
-        var audio=new Audio("sounds/tom-1.mp3");
-        audio.play();
+        // var audio=new Audio("sounds/tom-1.mp3");
+        // audio.play();
+        var buttonInnerHTMl=this.innerHTML
+        switch buttonInnerHTMl:
+        case "w":
+            var audio=new Audio("sounds/tom-1.mp3");
+            audio.play();
+        break:
+        default:
     })
 }
 //Higher order functions
