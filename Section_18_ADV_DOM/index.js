@@ -1,5 +1,17 @@
 // window.onload(){}
-
+window.onload=function(){
+    function BellBoy(yearsOfExp,name,cleaningRept){
+        this.experience=yearsOfExp;
+        this.name=name;
+        this.skills=cleaningRept;
+    }
+    var bellboy1=new BellBoy(12,"Tommy",['Bedroom','coridor']);
+    var bellboy2=new BellBoy(2,"Jimmy",['Bath','Bedroom','coridor']);
+    console.log(bellboy1.name);
+    console.log(bellboy1.experience);
+    console.log(bellboy2.name);
+    console.log(bellboy2.experience);
+}
 var buttons=document.querySelectorAll("button")
 for(i in buttons){
     var rawclass=buttons[i].className;
@@ -65,16 +77,3 @@ Calc(1,2,add);
 //put this in console for debugging.
 */
 
-window.onload=function(){
-    function BellBoy(yearsOfExp,name,cleaningRept){
-        this.experience=yearsOfExp;
-        this.name=name;
-        this.skills=cleaningRept;
-    }
-    var bellboy1=new BellBoy(12,"Tommy",['Bedroom','coridor']);
-    var bellboy2=new BellBoy(2,"Jimmy",['Bath','Bedroom','coridor']);
-    console.log(bellboy1.name);
-    console.log(bellboy1.experience);
-    console.log(bellboy2.name);
-    console.log(bellboy2.experience);
-}
