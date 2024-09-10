@@ -32,15 +32,15 @@ for(i in buttons){
             tom4.play();
         break;
         case "j":
-            var tom5=new Audio("sounds/tom-5.mp3");
+            var tom5=new Audio("sounds/snare.mp3");
             tom5.play();
         break;
         case "k":
-            var tom6=new Audio("sounds/tom-6.mp3");
+            var tom6=new Audio("sounds/crash.mp3");
             tom6.play();
         break;
         case "l":
-            var tom7=new Audio("sounds/tom-7.mp3");
+            var tom7=new Audio("sounds/kick.mp3");
             tom7.play();
         break;
         default:
