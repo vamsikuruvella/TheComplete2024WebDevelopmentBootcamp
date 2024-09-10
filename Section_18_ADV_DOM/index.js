@@ -12,6 +12,10 @@ window.onload = function() {
     console.log(bellboy1.experience);
     console.log(bellboy2.name);
     console.log(bellboy2.experience);
+
+    document.addEventListener("keypress",function(){
+        alert("Key Pressed");
+    });
 }
 
 var buttons = document.querySelectorAll("button");
