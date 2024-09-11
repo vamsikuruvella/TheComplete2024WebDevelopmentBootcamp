@@ -1,3 +1,6 @@
+function myFunction() {
+    console.log("This is accessible from the console!");
+}
 window.onload = function() {
     function BellBoy(yearsOfExp, name, cleaningRept) {
         this.experience = yearsOfExp;
