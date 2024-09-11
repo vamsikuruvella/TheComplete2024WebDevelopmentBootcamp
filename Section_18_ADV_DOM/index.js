@@ -1,6 +1,21 @@
 function myFunction() {
     console.log("This is accessible from the console!");
 }
+
+// Define the callback function before using it
+function callback1(data) {
+    console.log("Got the input from the call which is: " + data);
+}
+
+function addAnotherEventListener(eventName, callback) {
+    if (eventName == "keyPress") {
+        callback("THE INPUT PASSED DURING CALLING");
+    }
+}
+
+// Call the function after defining the callback
+addAnotherEventListener('keyPress', callback1);
+
 window.onload = function() {
     function BellBoy(yearsOfExp, name, cleaningRept) {
         this.experience = yearsOfExp;
