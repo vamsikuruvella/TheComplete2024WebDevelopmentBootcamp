@@ -20,13 +20,15 @@ function addAnotherEventListener(eventName, callback) {
 addAnotherEventListener('keyPress', callback1);
 
 window.onload = function() {
+    //constructor functions
     function BellBoy(yearsOfExp, name, cleaningRept) {
         this.experience = yearsOfExp;
         this.name = name;
         this.skills = cleaningRept;
     }
 
-    var bellboy1 = new BellBoy(12, "Tommy", ['Bedroom', 'corridor']);
+    var bellboy1 = new BellBoy(12, "Tommy", ['Bedroom', 'corridor']); // initializing the function since
+    // the 'BellBoy' function is using 'this'
     var bellboy2 = new BellBoy(2, "Jimmy", ['Bath', 'Bedroom', 'corridor']);
     
     console.log(bellboy1.name);
