@@ -1,3 +1,5 @@
+
+
 function myFunction() {
     console.log("This is accessible from the console!");
 }
