@@ -11,6 +11,9 @@ function addAnotherEventListener(eventName, callback) {
     if (eventName == "keyPress") {
         callback("THE INPUT PASSED DURING CALLING");
     }
+    else{
+        console.log("Not the right event name");
+    }
 }
 
 // Call the function after defining the callback
