@@ -133,7 +133,7 @@ buttons.forEach(function(button, i) {
 
 
 function buttonAnimation(buttonhtml){
-    buttonhtml.classList.add('pressed'); // this is not working but let it be 
+    buttonhtml.classList.add('pressed'); // this is working but let it be 
 
     setTimeout(function(){
         buttonhtml.classList.remove('pressed');
