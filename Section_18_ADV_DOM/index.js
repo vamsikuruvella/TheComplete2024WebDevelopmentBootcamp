@@ -94,7 +94,7 @@ buttons.forEach(function(button, i) {
     
     button.addEventListener("click", function() {
         var buttonInnerHTMl = this.innerHTML;
-        buttonAnimation(this);
+        
         switch (this) {
             case "w":
                 var tom1 = new Audio("sounds/tom-1.mp3");
@@ -127,6 +127,7 @@ buttons.forEach(function(button, i) {
             default:
                 console.log(buttonInnerHTMl);
         }
+        buttonAnimation(this);
     });
 });
 
