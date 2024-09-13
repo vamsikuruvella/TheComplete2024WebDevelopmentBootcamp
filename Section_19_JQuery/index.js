@@ -8,4 +8,3 @@
 
 console.log($('h1').css('color'));
 $('h1').css('color','green');
-
