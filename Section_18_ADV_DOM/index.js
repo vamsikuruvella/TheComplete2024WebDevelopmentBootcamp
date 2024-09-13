@@ -94,8 +94,8 @@ buttons.forEach(function(button, i) {
     
     button.addEventListener("click", function() {
         var buttonInnerHTMl = this.innerHTML;
-
-        switch (buttonInnerHTMl) {
+        buttonAnimation(buttonInnerHTMl);
+        switch (this) {
             case "w":
                 var tom1 = new Audio("sounds/tom-1.mp3");
                 tom1.play();
@@ -129,6 +129,16 @@ buttons.forEach(function(button, i) {
         }
     });
 });
+
+
+function buttonAnimation(buttonhtml){
+    buttonhtml.classList.add('pressed');
+
+    setTimeout(function(){
+        buttonhtml.classList.remove('pressed');
+    },100);
+}
+
 
 // Higher order functions
 function add(n1, n2) {
