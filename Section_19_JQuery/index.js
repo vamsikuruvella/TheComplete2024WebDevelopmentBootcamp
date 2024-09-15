@@ -14,3 +14,5 @@ console.log($('h1').hasClass('big-title'));
 
 // Manipulate Text
 $('h1').text('Bye');
+
+$('button').html('<em>Hey</em>')
