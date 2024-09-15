@@ -17,4 +17,4 @@ $('h1').text('Bye');
 
 $('button').html('<em>Hey</em>')
 // $('button').text("Don't Click")
-$('a').attr('href','www.google.com')
+$('a').attr('href','https://www.google.com/')
