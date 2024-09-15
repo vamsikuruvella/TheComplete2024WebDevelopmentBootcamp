@@ -16,4 +16,4 @@ console.log($('h1').hasClass('big-title'));
 $('h1').text('Bye');
 
 $('button').html('<em>Hey</em>')
-$('button').text("Don't Click")
+// $('button').text("Don't Click")
