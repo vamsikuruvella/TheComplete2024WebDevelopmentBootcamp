@@ -34,7 +34,7 @@ $('input').keypress(function(event){ //to use keypress for entire document you c
 
 $("h1").on('mouseover',function(){
     $('h1').css('color','purple')
-    setTimeout(function(){
-        $('h1').css('color','red');
-    },500);
+    // setTimeout(function(){
+    //     $('h1').css('color','red');
+    // },500);
 })
