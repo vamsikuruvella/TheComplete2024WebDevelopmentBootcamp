@@ -21,3 +21,9 @@ $('a').attr('href','https://www.google.com/')
 $('h1').click(function(){
     $('h1').css('color','purple');
 })
+$('button').click(function(){
+    $('h1').css('color','red');
+    setTimeout(function(){
+        $('h1').css('color','purple');
+    },1000);
+})
