@@ -31,3 +31,7 @@ $('button').click(function(){
 $('input').keypress(function(event){ //to use keypress for entire document you can use 'body' or 'document' instead of input
     $('h1').text(event.key);
 })
+
+$("h1").on('mouseover',function(){
+    $('h1').css('color','purple')
+})
