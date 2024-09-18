@@ -26,4 +26,8 @@ $('button').click(function(){
     setTimeout(function(){
         $('h1').css('color','purple');
     },1500);
+});
+
+$('input').keypress(function(event){
+    console.log(event.key);
 })
