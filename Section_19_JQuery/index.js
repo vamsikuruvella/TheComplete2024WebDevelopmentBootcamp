@@ -38,3 +38,5 @@ $("h1").on('mouseover',function(){
     //     $('h1').css('color','red');
     // },500);
 })
+
+$('h1').before('<button>New</button>')
