@@ -28,6 +28,6 @@ $('button').click(function(){
     },1500);
 });
 
-$('input').keypress(function(event){
+$('input').keypress(function(event){ //to use keypress for entire document you can use 'body' or 'document' instead of input
     console.log(event.key);
 })
