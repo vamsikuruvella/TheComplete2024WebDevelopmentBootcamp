@@ -18,3 +18,6 @@ $('h1').text('Bye');
 $('button').html('<em>Hey</em>')
 // $('button').text("Don't Click")
 $('a').attr('href','https://www.google.com/')
+$('h1').click(function(){
+    $('h1').css('color','red');
+})
