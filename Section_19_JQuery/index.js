@@ -29,5 +29,5 @@ $('button').click(function(){
 });
 
 $('input').keypress(function(event){ //to use keypress for entire document you can use 'body' or 'document' instead of input
-    console.log(event.key);
+    $('h1').text(event.key);
 })
