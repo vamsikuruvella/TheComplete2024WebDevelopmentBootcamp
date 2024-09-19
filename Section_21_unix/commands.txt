@@ -8,3 +8,4 @@ touch <file name> :: Creates the new file of the name specified
 open <file name> :: opens the files for mac
 code <file name> :: opens the file for windows
 open -a /Applications/Visual\ Studio\ Code.app <file name> :: opens the file with the appication mentioned
+rm <file name> :: Deletes the file
