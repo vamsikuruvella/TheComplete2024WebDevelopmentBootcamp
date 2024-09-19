@@ -22,7 +22,9 @@ $('h1').click(function(){
     $('h1').css('color','purple');
 })
 $('button').click(function(){
-    $('h1').css('color','red');
+    $('h1').css('color','red');//hide, show, toggle, fadeOut,fadeIn, fadeToggle, slideUp, slideDown, slideToggle
+    //.animate({opacity:0.5}) or .animate({margin:20})
+    //.slideUp().slideDown().animate({opacity:0.5})
     setTimeout(function(){
         $('h1').css('color','purple');
     },1500);
