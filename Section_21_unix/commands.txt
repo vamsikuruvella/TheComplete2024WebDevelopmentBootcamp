@@ -10,3 +10,4 @@ code <file name> :: opens the file for windows
 open -a /Applications/Visual\ Studio\ Code.app <file name> :: opens the file with the appication mentioned
 rm <file name> :: Deletes the file
 rm * :: deletes all the files in the current directory
+rm -r <directory name> :: Deletes the directory all the items inside
