@@ -1,0 +1,5 @@
+ls -a :: To show all the files and folders including hidden
+cd ~ :: takes to root directory 
+pwd :: To get the path of current location
+cd .. :: to walk back one step in the path
+cd ../.. :: Walks back two steps in the path
