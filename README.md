@@ -17,3 +17,5 @@ The REPL is similar to console in chrome with extra features
 node index.js :: to run the js file in terminal after installing nodeJS
 
 NPM -> Node Package manager
+
+ExpressJS build upon NodeJS
