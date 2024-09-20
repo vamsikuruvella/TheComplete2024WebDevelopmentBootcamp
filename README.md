@@ -14,3 +14,4 @@ is a computer environment where the user inputs are read and evaluvated, and the
 To enable you have to type 'node' in terminal
 >.help should give you the commands to use
 The REPL is similar to console in chrome with extra features
+node index.js :: to run the js file in terminal after installing nodeJS
