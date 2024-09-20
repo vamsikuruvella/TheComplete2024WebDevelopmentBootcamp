@@ -12,8 +12,8 @@ inquirer
   ])
   .then((answers) => {
     console.log(`hello ${answers["Name"]}`);
-    var qr_svg = qr.image('I love QR!', { type: 'svg' });
-    qr_svg.pipe(require('fs').createWriteStream('i_love_qr.svg'));
+    var qr_img = qr.image(answers["Name"]);
+    qr_img.pipe(require('fs').createWriteStream('qr_img.png'));
   })
   .catch((error) => {
     if (error.isTtyError) {
