@@ -11,7 +11,7 @@ inquirer
     {"message":"what is ur name: ","name":"Name"}
   ])
   .then((answers) => {
-    console.log(`hello ${answers}`);
+    console.log(`hello ${answers["Name"]}`);
   })
   .catch((error) => {
     if (error.isTtyError) {
