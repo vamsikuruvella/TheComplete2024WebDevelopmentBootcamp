@@ -12,3 +12,4 @@ node --version
 Node REPL(Read Eval Print Loop)
 is a computer environment where the user inputs are read and evaluvated, and then the results are returned to the user.
 To enable you have to type 'node' in terminal
+>.help should give you the commands to use
