@@ -8,10 +8,10 @@ import inquirer from 'inquirer';
 
 inquirer
   .prompt([
-    "name: ","nm: "
+    {"message":"what is ur name: ","name":"Name"}
   ])
   .then((answers) => {
-    console.log(`hello ${JSON.stringify(answers)}`);
+    console.log(`hello ${answers}`);
   })
   .catch((error) => {
     if (error.isTtyError) {
