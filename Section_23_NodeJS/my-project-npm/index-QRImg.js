@@ -5,6 +5,8 @@
 */
 
 import inquirer from 'inquirer';
+import qr from 'qr-image'
+import fs from 'fs'
 
 inquirer
   .prompt([
@@ -13,7 +15,7 @@ inquirer
   .then((answers) => {
     console.log(`hello ${answers["Name"]}`);
     var qr_img = qr.image(answers["Name"]);
-    qr_img.pipe(require('fs').createWriteStream('qr_img.png'));
+    qr_img.pipe(fs.createWriteStream('qr_img.png'));
   })
   .catch((error) => {
     if (error.isTtyError) {
