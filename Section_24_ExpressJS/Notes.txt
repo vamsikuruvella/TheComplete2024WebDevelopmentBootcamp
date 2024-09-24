@@ -1,0 +1,9 @@
+Step 1:Intialize NPM with the below command, it will create package.json
+npm init -y
+
+Step 2: if you want to use ECMA instead of CJS, edit or add("type": "module")
+
+Step 3: also verify ""main": "index.js"" in the package.json
+
+To install Express.js use below command(Refer https://www.npmjs.com/ website to check for modules to install)
+npm i express 
