@@ -7,3 +7,6 @@ Step 3: also verify ""main": "index.js"" in the package.json
 
 To install Express.js use below command(Refer https://www.npmjs.com/ website to check for modules to install)
 npm i express 
+
+To start a Server use below command
+node index.js
