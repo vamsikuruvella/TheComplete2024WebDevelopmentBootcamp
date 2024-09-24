@@ -18,4 +18,4 @@ node index.js :: to run the js file in terminal after installing nodeJS
 
 NPM -> Node Package manager
 
-ExpressJS build upon NodeJS
+ExpressJS built upon NodeJS
