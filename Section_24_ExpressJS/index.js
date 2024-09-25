@@ -1,10 +1,20 @@
 import express from "express"
+import { dirname } from "path"
+import { fileURLToPath } from "url" 
+import bodyParser form "body-parser"
+const _dirname=dirname(fileURLToPath(import.meta.url))
+console.log(import.meta);
 const app=express();
 const port=3000;
 
 app.get('/',(req,res)=>{
     res.send("<h1>Hello, World!</h1>");
     console.log(req.rawHeaders);
+});
+
+app.get("/middleware",(req,res)=>{
+    console.log("Dir Name: "+_dirname);
+    res.sendFile(_dirname+"/public/index.html")
 });
 
 app.get('/about',(req,res)=>{

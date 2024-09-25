@@ -28,3 +28,7 @@ set the port visibility to public to make it work
 
 
 npm install command will install all dependencies in the package.json file
+
+
+body-parser is the middleware, use below command to install
+npm i body-parser
