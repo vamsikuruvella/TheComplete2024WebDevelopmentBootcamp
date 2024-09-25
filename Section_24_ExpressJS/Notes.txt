@@ -13,3 +13,6 @@ node index.js
 
 When the website load the Express js makes a GET request to server, that is why an empty website is 
 loaded it said "Cannot GET/" error, so we used app.get to send the data 'Hello, World!'
+
+
+Refer to kill the process in a port: https://dev.to/sylwiavargas/how-to-properly-close-a-port-2p36
