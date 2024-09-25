@@ -27,6 +27,11 @@ app.get('/user/vamsi',(req,res)=>{
     console.log(req.rawHeaders);
 });
 
+app.put('/user/vamsi',(req,res)=>{
+    res.sendStatus(202);
+    console.log(req.rawHeaders);
+});
+
 app.listen(port,()=>{
     console.log(`Server Running in ${port}`);
     
