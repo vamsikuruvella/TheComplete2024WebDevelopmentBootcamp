@@ -24,6 +24,8 @@ app.get("/middleware",(req,res)=>{
 app.post("/submit",(req,res)=>{
     console.log(req.body);
     // res.sendFile(_dirname+"/public/index.html")
+    res.sendStatus(201)
+    //res.send({"!!":"111"});
 });
 
 app.get('/about',(req,res)=>{
