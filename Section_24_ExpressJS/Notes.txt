@@ -16,3 +16,8 @@ loaded it said "Cannot GET/" error, so we used app.get to send the data 'Hello, 
 
 
 Refer to kill the process in a port: https://dev.to/sylwiavargas/how-to-properly-close-a-port-2p36
+
+
+Nodemon is a auto refreshs server after the update of the js file, use below command to install
+npm i -g nodemon
+use "nodemon index.js" command to run js file with nodemon
