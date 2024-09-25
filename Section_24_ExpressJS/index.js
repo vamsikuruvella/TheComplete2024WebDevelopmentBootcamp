@@ -17,6 +17,16 @@ app.get('/contact',(req,res)=>{
     console.log(req.rawHeaders);
 });
 
+app.get('/register',(req,res)=>{
+    res.sendStatus(200);
+    console.log(req.rawHeaders);
+});
+
+app.get('/user/vamsi',(req,res)=>{
+    res.sendStatus(201);
+    console.log(req.rawHeaders);
+});
+
 app.listen(port,()=>{
     console.log(`Server Running in ${port}`);
     
