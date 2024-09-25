@@ -32,3 +32,8 @@ npm install command will install all dependencies in the package.json file
 
 body-parser is the middleware, use below command to install
 npm i body-parser
+npm list body-parser
+
+
+to access or know all the core modules in NodeJS
+type 'node' and then 'console.log(require('module').builtinModules);'
