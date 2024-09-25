@@ -29,7 +29,7 @@ app.get('/user/vamsi',(req,res)=>{
 
 app.put('/user/vamsi',(req,res)=>{
     res.sendStatus(202);
-    console.log(req.rawHeaders);
+    console.log(req);
 });
 
 app.listen(port,()=>{
