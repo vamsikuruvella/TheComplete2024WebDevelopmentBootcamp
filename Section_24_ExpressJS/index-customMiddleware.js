@@ -8,7 +8,7 @@ const port=3000
 function logger(req,res,next){ 
     console.log("Request Method: "+req.method);
     console.log("Request URL: "+req.url);
-    next(); //when commented execution won't reach app.use since this is custom middleware.
+    next(); //when commented execution won't reach app.get since this is custom middleware.
 }
 
 app.use(logger)//morgan('tiny'));//tiny, combined, short, dev, common, are some examples of OOB formats
