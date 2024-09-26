@@ -28,7 +28,6 @@ app.post("/submit",(req,res)=>{
     //res.send({"!!":"111"});
 });
 
-app.
 
 app.get('/about',(req,res)=>{
     res.send("<h1>About Me!</h1>");

@@ -37,3 +37,16 @@ npm list body-parser
 
 to access or know all the core modules in NodeJS
 type 'node' and then 'console.log(require('module').builtinModules);'
+
+
+Middleware in General:
+In Express, middleware functions need to call next() to pass control to the next middleware or route handler. If next() is not called, the request will not move to the next stage, and the response will "hang."
+
+body-parser:
+body-parser is middleware, and like any middleware, it does call next() internally after it has parsed the request body. That’s why you don't need to explicitly call next() when using body-parser—it does this automatically after processing.
+
+morgan:
+morgan is also middleware, but it does call next() internally, just like body-parser. You don’t need to explicitly call next() when using morgan. Once it logs the request details, it passes control to the next middleware or route handler by calling next() automatically.
+
+Custom Middleware:
+For custom middleware, like the logger function you wrote earlier, you must call next() manually to ensure that the request moves on to the next middleware or route handler. If you forget to call next(), the request will not proceed, and the response will not be sent.
