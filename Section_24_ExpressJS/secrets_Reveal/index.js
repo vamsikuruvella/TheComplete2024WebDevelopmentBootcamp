@@ -35,7 +35,7 @@ app.post("/check", (req, res) => {
       res.sendFile(_dirname + "/public/secret.html");
     } else {
       res.sendFile(_dirname + "/public/index.html");
-      //Alternatively res.redirect("/");
+      // res.redirect("/"); //Alternatively
     }
   });
 
