@@ -34,6 +34,10 @@ body-parser is the middleware, use below command to install
 npm i body-parser
 npm list body-parser
 
+if dependencies are all listed properly in package.json file, you can use below command to install all
+npm i
+
+
 
 to access or know all the core modules in NodeJS
 type 'node' and then 'console.log(require('module').builtinModules);'
