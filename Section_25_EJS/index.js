@@ -4,7 +4,20 @@ const app=express()
 const port=3000
 
 app.get('/',(req,res)=>{
-    res.render("index.ejs",{dayType:"a weekday",advice:"It's time to work hard.",});
+    const today=new Date();
+    const day=today.getDay();
+    console.log(day);
+    var typeDay="";
+    var advice="";
+    if (day==0 || day==6){
+        typeDay="a Weekend";
+        advice="It's time to have fun";
+    }
+    else{
+        typeDay="a weekday";
+        advice="It's time to work hard"
+    }
+    res.render("index.ejs",{dayType:typeDay,advice:advice,});
 
 })
 
