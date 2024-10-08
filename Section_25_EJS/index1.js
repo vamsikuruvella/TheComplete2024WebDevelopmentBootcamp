@@ -17,7 +17,7 @@ app.get('/',(req,res)=>{
         typeDay="a weekday";
         advice="It's time to work hard"
     }
-    res.render("index.ejs",{dayType:typeDay,advice:advice,});
+    res.render("index1.ejs",{dayType:typeDay,advice:advice,});
 
 })
 
