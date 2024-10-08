@@ -54,3 +54,6 @@ morgan is also middleware, but it does call next() internally, just like body-pa
 
 Custom Middleware:
 For custom middleware, like the logger function you wrote earlier, you must call next() manually to ensure that the request moves on to the next middleware or route handler. If you forget to call next(), the request will not proceed, and the response will not be sent.
+
+Running Multiple commands in terminal in one go. the below one creates 'view' folder and index.js file and index.ejs inside view folder
+mkdir view; touch index.js view/index.ejs
