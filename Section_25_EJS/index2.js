@@ -6,7 +6,13 @@ const port=3000
 let bowl=['oranges','apples','grapes']
 
 app.get('/',(req,res)=>{
-    res.render('index2.ejs',{ fruits:bowl, })
+    data={
+        items:['oranges','apples','grapes'],
+        title:"EJS Tags",
+        Seconds:new Date().getSeconds(),
+        htmlContent:"<em>This is some EM text</em>"
+    }
+    res.render('index2.ejs',{ data })
 })
 
 app.listen(port,()=>{
