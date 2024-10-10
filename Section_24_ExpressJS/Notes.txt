@@ -60,3 +60,7 @@ mkdir view; touch index.js view/index.ejs
 
 when the variable that we are trying to access in ejs file does not exist we will get an error when
 if the 'if' statement is used, to avoid we use something called 'locales' in js file when sending data 
+ex:'locals.numberofletters' if used without 'locals' there will be error because the 'numberofletters' will only come 
+to existence after clicking 'ok' button. 'locals' look if the variable is mentioned in the js file.
+OR
+you can use '<%= numberofletters || 0 %>'
