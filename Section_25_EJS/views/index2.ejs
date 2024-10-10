@@ -9,6 +9,7 @@
 <body>
     <h1><%=data['title']%></h1>
     <p>Current Second: <%=data.Seconds%></p>
+    <%if (data.Seconds % 2===0){%>
     <ul>
         <%for(i in data['items']) {%>
         <li>
@@ -16,7 +17,10 @@
         </li>
         <%}%>
     </ul>
+    <%}else{%>
+        <p>It is an odd Second(<%=data.Seconds%>) so No content to display</p>
+        <%}%>
     <p><%- data.htmlContent %></p>
 </body>
-
+<%- include('footer2.ejs') %>
 </html>
