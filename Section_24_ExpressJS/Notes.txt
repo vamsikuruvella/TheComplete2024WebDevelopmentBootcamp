@@ -57,3 +57,6 @@ For custom middleware, like the logger function you wrote earlier, you must call
 
 Running Multiple commands in terminal in one go. the below one creates 'view' folder and index.js file and index.ejs inside view folder
 mkdir view; touch index.js view/index.ejs
+
+when the variable that we are trying to access in ejs file does not exist we will get an error when
+if the 'if' statement is used, to avoid we use something called 'locales' in js file when sending data 
