@@ -7,7 +7,7 @@ const port=3000
 app.use(bodyParser.urlencoded({extended:true}))
 
 app.get('/',(req,res)=>{
-    // res.locals.number_of_letters=0;
+    // res.locals.number_of_letters=1;
     res.render('index3.ejs')
 });
 
