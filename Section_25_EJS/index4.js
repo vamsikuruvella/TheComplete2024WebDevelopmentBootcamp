@@ -11,6 +11,15 @@ app.get('/',(req,res)=>{
     res.render('index4.ejs')
 });
 
+app.get('/about',(req,res)=>{
+    // res.locals.number_of_letters=1;
+    res.render('about.ejs')
+});
+
+app.get('/contact',(req,res)=>{
+    // res.locals.number_of_letters=1;
+    res.render('contact.ejs')
+});
 
 app.listen(port,()=>{
     console.log(`Server Running on Port ${port}`)
