@@ -1,2 +1,67 @@
+Step 1:Intialize NPM with the below command, it will create package.json
+npm init -y
 
+Step 2: if you want to use ECMA instead of CJS, edit or add("type": "module")
+
+Step 3: also verify ""main": "index.js"" in the package.json
+
+To install Express.js use below command(Refer https://www.npmjs.com/ website to check for modules to install)
+npm i express 
+
+To start a Server use below command
+node index.js
+
+When the website load the Express js makes a GET request to server, that is why an empty website is 
+loaded it said "Cannot GET/" error, so we used app.get to send the data 'Hello, World!'
+
+
+Refer to kill the process in a port: https://dev.to/sylwiavargas/how-to-properly-close-a-port-2p36
+
+
+Nodemon is a auto refreshs server after the update of the js file, use below command to install
+npm i -g nodemon
+use "nodemon index.js" command to run js file with nodemon
+
+
+when testing the url(https://cautious-couscous-5p5j59jqr5q27jv-3000.app.github.dev/register) from postman
+set the port visibility to public to make it work
+
+
+npm install command will install all dependencies in the package.json file
+
+
+body-parser is the middleware, use below command to install
+npm i body-parser
+npm list body-parser
+
+if dependencies are all listed properly in package.json file, you can use below command to install all
+npm i
+
+
+
+to access or know all the core modules in NodeJS
+type 'node' and then 'console.log(require('module').builtinModules);'
+
+
+Middleware in General:
+In Express, middleware functions need to call next() to pass control to the next middleware or route handler. If next() is not called, the request will not move to the next stage, and the response will "hang."
+
+body-parser:
+body-parser is middleware, and like any middleware, it does call next() internally after it has parsed the request body. That’s why you don't need to explicitly call next() when using body-parser—it does this automatically after processing.
+
+morgan:
+morgan is also middleware, but it does call next() internally, just like body-parser. You don’t need to explicitly call next() when using morgan. Once it logs the request details, it passes control to the next middleware or route handler by calling next() automatically.
+
+Custom Middleware:
+For custom middleware, like the logger function you wrote earlier, you must call next() manually to ensure that the request moves on to the next middleware or route handler. If you forget to call next(), the request will not proceed, and the response will not be sent.
+
+Running Multiple commands in terminal in one go. the below one creates 'view' folder and index.js file and index.ejs inside view folder
+mkdir view; touch index.js view/index.ejs
+
+when the variable that we are trying to access in ejs file does not exist we will get an error when
+if the 'if' statement is used, to avoid we use something called 'locales' in js file when sending data 
+ex:'locals.numberofletters' if used without 'locals' there will be error because the 'numberofletters' will only come 
+to existence after clicking 'ok' button. 'locals' look if the variable is mentioned in the js file.
+OR
+you can use '<%= numberofletters || 0 %>'
 
