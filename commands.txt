@@ -11,3 +11,4 @@ open -a /Applications/Visual\ Studio\ Code.app <file name> :: opens the file wit
 rm <file name> :: Deletes the file
 rm * :: deletes all the files in the current directory
 rm -r <directory name> :: Deletes the directory all the items inside
+git init :: Initializes empty Git repository

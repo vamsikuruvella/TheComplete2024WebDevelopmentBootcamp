@@ -1,0 +1,2 @@
+git init :: should be used to Initializes GIT, if there is a .git file in the parent directory you dont have to Initialize git in child too remove child .git to avoid errors while commiting
+rm -r yourfolder/.git/ :: use this to remove .git file
