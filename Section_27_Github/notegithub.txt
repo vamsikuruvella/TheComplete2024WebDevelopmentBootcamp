@@ -4,4 +4,5 @@ rm -r yourfolder/.git/ :: use this to remove .git file
 git status :: used to display the state of the working directory and the staging area in a Git repository. when used the untracted files shown in red.
 git add filename or git aad . :: can be used to add file or everzything in directory with "git add ." to staging area and when git status is used again file name shows in green now.
 git commit :: used to commit
+git commit -m "commit message" :: 
 git log :: shows the commits
