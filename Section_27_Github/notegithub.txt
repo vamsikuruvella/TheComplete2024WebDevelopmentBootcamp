@@ -6,4 +6,5 @@ git add filename or git aad . :: can be used to add file or everzything in direc
 git commit :: used to commit
 git commit -m "commit message" :: 
 git log :: shows the commits
+git diff Filename :: to know the differnce between the verions
 git push :: to publish your local commits
