@@ -8,3 +8,6 @@ git commit -m "commit message" ::
 git log :: shows the commits
 git diff Filename :: to know the differnce between the verions
 git push :: to publish your local commits
+touch .gitignore :: create this exact file and open using below command and add file names that should be ignored
+open -a filepath/.gitignore :: 
+git rm --cached -r . :: to remove all the files from staging area

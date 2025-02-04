@@ -12,3 +12,5 @@ rm <file name> :: Deletes the file
 rm * :: deletes all the files in the current directory
 rm -r <directory name> :: Deletes the directory all the items inside
 git init :: Initializes empty Git repository
+nano .gitignore  :: to open the specified file in terminal
+code filename :: to open files 'open' is not working
